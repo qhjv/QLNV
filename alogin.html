@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QLNV</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="stylelogin.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Quản lý nhân viên</h1>
+			<ul id="navli">
+				<li><a href="index.html">HOME</a></li>
+				<li><a class="homeLogin" href="elogin.html">Nhân viên</a></li>
+				<li><a class="homeLoginActive" href="alogin.html">Quản lý</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+	<h3 class="loginTitle">QUẢN LÝ ĐĂNG NHẬP</h3>
+	<div class="loginbox">
+        <h1>Login Here</h1>
+        <form action="process/aprocess.php" method="POST">
+            <p>Email</p>
+            <input type="text" name="mailuid" placeholder="Nhập email " required="required">
+            <p>Password</p>
+            <input type="password" name="pwd" placeholder="Nhập mật khẩu" required="required">
+            <input type="submit" name="login-submit" value="Login">
+           
+        </form>
+        
+    </div>
+</body>
+</html>
