@@ -1,13 +1,13 @@
 <?php
-//including the database connection file
+//bao gồm tệp kết nối cơ sở dữ liệu
 include("process/dbh.php");
 
-//getting id of the data from url
+//nhận id của dữ liệu từ url
 $id = $_GET['id'];
 $token = $_GET['token'];
 
-//deleting the row from table
+//xóa hàng khỏi bảng
 $result = mysqli_query($conn, "UPDATE `employee_leave` SET `status`='Chấp nhận' WHERE id = $id AND token = $token;");
 
-//redirecting to the display page (index.php in our case)
+//chuyển hướng đến trang hiển thị (index.php in our case)
 header("Location:empleave.php");
