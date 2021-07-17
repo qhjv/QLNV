@@ -62,7 +62,7 @@ if ($result) {
 <html>
 
 <head>
-    <title>View Employee | Admin Panel | Employee Management System</title>
+    <title>QLNV</title>
     <meta charset="utf-8" />
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -79,19 +79,18 @@ if ($result) {
 </head>
 
 <body>
+
     <header>
         <nav>
-            <h1>EMS</h1>
+            <h1>QLNV</h1>
             <ul id="navli">
-                <li><a class="homeblack" href="index.html">HOME</a></li>
-                <li><a class="homeblack" href="addemp.php">Add Employee</a></li>
-                <li><a class="homered" href="viewemp.php">View Employee</a></li>
-                <li><a class="homeblack" href="elogin.html">Log Out</a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="addemp.php">Thêm nhân viên</a></li>
+                <li><a class="homeactive" href="viewemp.php">Xem nhân viên</a></li>
+                <li><a class="homeLogin" href="elogin.html">Đăng xuất</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="divider"></div>
 
 
     <!-- <form id = "registration" action="edit.php" method="POST"> -->
@@ -100,7 +99,7 @@ if ($result) {
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Update Employee Info</h2>
+                    <h2 class="title">Sửa thông tin nhân viên</h2>
                     <form id="registration" action="edit.php" method="POST">
 
                         <div class="row row-space">

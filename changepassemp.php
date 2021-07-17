@@ -17,11 +17,11 @@ if (isset($_POST['update'])) {
     $sql = "UPDATE `employee` SET `password`='$new' WHERE id = $id";
     mysqli_query($conn, $sql);
     echo ("<SCRIPT LANGUAGE='JavaScript'>
-                  window.alert('Password Updated')
+                  window.alert('Cập nhật thành công')
                 window.location.href='myprofile.php?id=$id';</SCRIPT>");
   } else {
     echo ("<SCRIPT LANGUAGE='JavaScript'>
-    window.alert('Failed to Update Password')
+    window.alert('Lỗi')
     window.location.href='javascript:history.go(-1)';
     </SCRIPT>");
   }
